@@ -61,13 +61,11 @@ To authenticate you need to create a user account (that adds a user to the datab
 
 When I create a new Token I first create a record in the `tokens` table in my database that records the following:
 
-```
 |id|user_id|valid|created|
-|:-|:-|:-|:-|
+|:--|:--|:--|:--|
 |1|23|0|1565685312042|
 |2|23|1|1565685438855|
 |3|25|1|1565685457727|
-```
 
 What gets put into the token and swaped back and forth between server and client is the id of that row in the `tokens` table. When a token is verified the following steps are taken.
 
